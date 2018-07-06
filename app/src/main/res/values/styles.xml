@@ -1,0 +1,75 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Base.Widget.Design.TabLayout" parent="android:Widget">
+        <item name="tabBackground">@drawable/tab_background</item>
+        <item name="tabIndicatorHeight">0dp</item>
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+        <style name="tvStyle">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+        </style>
+
+        <style name="ll_tvStyle">
+            <item name="android:layout_width">0dp</item>
+            <item name="android:layout_height">match_parent</item>
+        </style>
+
+        <style name="imgStyle">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:scaleType">centerCrop</item>
+            <item name="android:adjustViewBounds">true</item>
+        </style>
+
+        <style name="horizontalViewStyle">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">1dp</item>
+            <item name="android:background">#e0e0e0</item>
+            <item name="android:layout_marginTop">10dp</item>
+            <item name="android:layout_marginRight">15dp</item>
+            <item name="android:layout_marginLeft">15dp</item>
+        </style>
+
+        <style name="verticalViewStyle">
+            <item name="android:layout_width">2dp</item>
+            <item name="android:layout_height">match_parent</item>
+            <item name="android:background">#e0e0e0</item>
+        </style>
+
+        <style name="CardStyle">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="cardElevation">5dp</item>
+            <!-- <item name="android:layout_marginLeft">5dp</item>
+             <item name="android:layout_marginRight">5dp</item>
+             <item name="android:layout_marginTop">10dp</item>
+             <item name="android:layout_marginBottom">10dp</item>
+             <item name="cardCornerRadius">3dp</item>-->
+        </style>
+
+
+        <style name="tvStyle.white">
+            <item name="android:textColor">@android:color/white</item>
+        </style>
+
+        <style name="ll_tvStyle.white">
+            <item name="android:textColor">@android:color/black</item>
+        </style>
+
+
+</resources>

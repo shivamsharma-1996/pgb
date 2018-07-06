@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_addProperty"
+        android:title="Upload Your Property"
+        android:visible="true"/>
+
+    <item android:id="@+id/nav_ads"
+        android:title="My properties"
+        android:visible="true"/>
+
+    <item android:id="@+id/nav_bookmarks"
+        android:title="My Bookmarks"
+        android:visible="true"/>
+
+    <!--<item android:id="@+id/nav_upgrade_seeker"
+        android:title="Upgrade to Seller A/c"
+        android:visible="false"/>-->
+    <!--<group android:id="@+id/a">
+        <item android:id="@+id/nav_share"
+            android:title="Share This App"/>
+
+        <item android:id="@+id/nav_about"
+            android:title="About"/>
+
+
+    </group>-->
+    <!--  <item android:id="@+id/nav_signUp"
+          android:title="Create new Account"/>
+
+      <item android:id="@+id/nav_signIn"
+          android:title="Already Have Account"/>-->
+
+    <item android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:visible="true"/>
+</menu>

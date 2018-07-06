@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="8.5"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/adcard_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Shree Vinayak Boys Hostel"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_gravity="bottom"
+        android:textSize="20dp"
+        android:paddingLeft="5dp"/>
+    <TextView
+            android:id="@+id/adcard_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20 A, Shivaji Nagar,New Kesari,Adarsh Nagar, Ajmer,342001"
+            android:textStyle="bold"
+            android:layout_gravity="bottom"
+            android:textSize="15dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"/>
+
+</LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/adcard_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:src="@drawable/location"
+        android:tint="#df001e"
+        />
+
+
+
+
+</LinearLayout>

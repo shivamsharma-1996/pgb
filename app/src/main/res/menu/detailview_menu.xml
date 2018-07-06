@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/nav_bookmark" app:showAsAction="always" android:title="favourite" android:icon="@drawable/bookmark_border"/>
+    <item android:id="@+id/nav_share" app:showAsAction="always" android:title="share" android:icon="@drawable/ic_share_black_24dp"/>
+
+</menu>

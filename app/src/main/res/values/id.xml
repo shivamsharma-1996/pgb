@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="room1"/>
+    <item type="id" name="room2"/>
+    <item type="id" name="room3"/>
+    <item type="id" name="room4"/>
+    <item type="id" name="room5"/>
+    <item type="id" name="room6"/>
+    <item type="id" name="room7"/>
+    <item type="id" name="room8"/>
+</resources>

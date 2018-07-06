@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/room_instance_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/room_layout_collapse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="8"
+                    android:paddingLeft="10dp"
+                    android:text="Ac with Attached let-Bath(1-Bed )"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/add_more"
+                    android:layout_gravity="center_vertical" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/room_layout_expandable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:weightSum="15">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="Rent - "
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:gravity="right"
+                android:paddingLeft="10dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_rent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:hint="enter rent"
+                android:inputType="number"
+                android:maxLength="5"/>
+
+
+            <Spinner
+                android:id="@+id/spinner_rent_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:dropDownWidth="100dp"
+                android:gravity="left"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="Set Installment - "
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:gravity="right"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_Installment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:dropDownWidth="100dp"
+                    android:gravity="left"/>
+
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_installment_equal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="ff"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/ll_installment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+            <EditText
+                android:id="@+id/et_installment1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:hint="1st installment"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:inputType="number"
+                android:maxLength="5"/>
+
+
+
+                <EditText
+                android:id="@+id/et_installment2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:hint="2nd installment"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:inputType="number"
+                android:maxLength="5"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Click To Add NOTE : -      "
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="10dp"
+            android:textSize="15sp" />
+
+
+
+            <CheckBox
+                android:id="@+id/Check_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_note_default"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Entire Ammount payable in One Installment."
+                    android:paddingLeft="10dp"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- First Installment to be paid at the time of admission."
+            android:paddingLeft="10dp"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_note1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- Second installment to be paid after "
+                android:paddingLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_note2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6 months"
+                android:textColor="@android:color/black"
+                android:padding="5dp"
+                android:background="@drawable/custom_extra_charge_btn_bg"
+                />
+        </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right">
+
+                    <Button
+                        android:id="@+id/btn_Add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add"/>
+
+                   <!-- <Button
+                        android:id="@+id/btn_Remove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remove"/>-->
+
+                </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+      <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="8"
+                    android:paddingLeft="10dp"
+                    android:text="NonAc with Attached let-Bath(1-Bed )"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/add_more"
+                    android:layout_gravity="center_vertical" />
+
+                &lt;!&ndash; <RadioGroup
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="3">
+                     <RadioButton
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Yes"/>
+                     <RadioButton
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="No"/>
+                 </RadioGroup>&ndash;&gt;
+
+            </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/Non_Ac_room_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:weightSum="15">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="Rent - "
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:gravity="right"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_rent2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:hint="enter rent"
+                    android:inputType="number"
+                    android:maxLength="5"/>
+
+                <Spinner
+                    android:id="@+id/spinner_time2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:dropDownWidth="100dp"
+                    android:gravity="left"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="Set Installment - "
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:gravity="right"
+                android:paddingLeft="10dp"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spinner_Installment2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:dropDownWidth="100dp"
+                android:gravity="left"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="11"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/et_installment1_non_ac"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:hint="1st installment"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:inputType="number"
+                    android:maxLength="5"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:id="@+id/et_installment2_non_ac"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:hint="2nd installment"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:inputType="number"
+                    android:maxLength="5"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Click To Add NOTE : -      "
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorPrimary"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- First Installment to be paid at the time of admission."
+                android:paddingLeft="10dp"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- Second installment to be paid after  "
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_select_date1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 6 months"
+                    android:textColor="@android:color/black"
+                    android:padding="5dp"
+                    android:background="@drawable/custom_extra_charge_btn_bg"
+                    />
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove"/>
+
+    </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>-->
+
+        </LinearLayout>
+
+   <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#d4d3d3"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+</LinearLayout>
+

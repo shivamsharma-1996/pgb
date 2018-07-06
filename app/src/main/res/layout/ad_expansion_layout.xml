@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        android:layout_marginTop="8dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Registration/Booking/Advance"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        android:paddingBottom="3dp"
+        android:layout_margin="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Details are required*"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimary"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="Booking advance "
+                android:textSize="13dp"
+                android:textColor="#070be2"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/et_Booking_Fee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:hint="₹"
+                android:maxLength="4"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="Booking start from"
+                android:textSize="13dp"
+                android:textColor="#070be2"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_booking_startFrom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_bg"
+                android:layout_weight="5"
+                android:hint="Click to add date"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:weightSum="10">
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="Booking advance will include in Rent? "
+                android:textSize="13dp"
+                android:textColor="#070be2"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"/>
+
+            <RadioGroup
+                android:id="@+id/rg_booking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+                android:layout_weight="5"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rb_booking_yes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="YES"/>
+                <RadioButton
+                    android:id="@+id/rb_booking_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="NO"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIme Availability to contact "
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:background="@color/colorPrimary"/>
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Time Availability to contact"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="15"
+        android:layout_marginTop="10dp"
+       >
+
+        <TextView
+            android:id="@+id/availability_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Start-Time"
+            android:gravity="center"
+            android:layout_weight="5"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/rounded_bg"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="To"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="5"
+            android:textSize="15dp"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/availability_end"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="End-Time"
+            android:gravity="center"
+            android:layout_weight="5"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/rounded_bg"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        android:layout_marginTop="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rooms_container"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Rooms*"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_create_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add more rooms?"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            android:padding="10dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/ad_input_background"
+            android:layout_marginTop="3dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="9"
+                android:visibility="gone"
+                android:background="@color/colorPrimary">
+
+
+                <TextView
+                    android:id="@+id/tv_type_head"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="3"
+                    android:paddingLeft="10dp"
+                    android:text="Room_Type"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tv_rent_head"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:paddingRight="2.5dp"
+                    android:paddingLeft="2.5dp"
+                    android:text="Rent"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/tv_time_head"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="Time"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Are Rents Negotiable? *"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"/>
+
+            <RadioGroup
+                android:id="@+id/rg_isRentsNegotiable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/radio_negotiable_yes"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:text="Yes"
+                    android:padding="15dp"/>
+
+                <RadioButton
+                    android:id="@+id/radio_negotiable_no"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:text="No" />
+            </RadioGroup>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Required Deposit( optional &amp; refundable )"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:background="@color/colorPrimary"/>
+
+                <EditText
+                    android:id="@+id/et_deposit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg"
+                    android:layout_margin="3dp"
+                    android:hint="₹"
+                    android:maxLength="6"
+                    android:inputType="number"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Required Advance( optional )"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:background="@color/colorPrimary"/>
+
+                <EditText
+                    android:id="@+id/et_advance"
+                    android:maxLength="6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/ad_input_background"
+                    android:hint="₹"
+                    android:inputType="number"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="@string/facilities_charges"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/ad_input_background"
+            android:layout_margin="3dp">
+
+            <LinearLayout
+                android:id="@+id/facilities_container_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_facilities_charges"
+                    android:textSize="15dp"
+                    android:textColor="#ffffff"
+                    android:background="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Electricity Charges"
+                android:textSize="13dp"
+                android:textColor="#070be2"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_electricity_charges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:layout_margin="3dp"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Water Charges"
+                android:textSize="13dp"
+                android:textColor="#070be2"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_water_charges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:layout_margin="3dp"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:padding="8dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. General Facility"
+                android:textSize="13dp"
+                android:textColor="#070be2"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rec_electric_facility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Services"
+                android:textSize="13dp"
+                android:textColor="#070be2"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rec__service_facility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Others"
+                android:textSize="13dp"
+                android:textColor="#070be2"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:visibility="gone"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rec__others_facility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:visibility="gone">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/summery_facilities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Selected Items"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg"
+            android:layout_margin="3dp"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Is Rooms Available without Extra Charge Facilities*"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:background="@color/colorPrimary"/>
+
+            <RadioGroup
+                android:id="@+id/rg_is_RAWECF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <RadioButton
+                    android:id="@+id/radio_RAWECF_yes"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:text="Yes"
+                    android:padding="15dp"/>
+
+                <RadioButton
+                    android:id="@+id/radio_RAWECF_no"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:text="No" />
+            </RadioGroup>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Rules*"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rec_ad_rules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ad_input_background"
+            android:layout_margin="3dp"/>
+
+    </LinearLayout>
+</LinearLayout>

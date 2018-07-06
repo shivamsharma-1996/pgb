@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TableLayout
+        android:id="@+id/tabla_cuerpo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="20">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/cell_shape"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/cell_shape"
+                android:padding="5dp"
+                android:text="1-BED"
+                android:textSize="13dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/cell_shape"
+                android:padding="5dp"
+                android:text="2-BED"
+                android:textSize="13dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/cell_shape"
+                android:padding="5dp"
+                android:text="3-BED"
+                android:textSize="13dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/cell_shape"
+                android:padding="5dp"
+                android:text="4-BED"
+                android:textSize="13dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="20">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/cell_shape"
+                android:padding="5dp"
+                android:text="Ac + Attach Let-Bath"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:text="Not Available"
+                android:gravity="center"
+                android:background="@drawable/cell_shape" />
+
+            <LinearLayout
+                android:id="@+id/ll_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:background="@drawable/cell_shape"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_rent1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:padding="5dp"
+                    android:textSize="10sp"
+                    android:text="rs1000"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_select_installment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:textSize="8sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Check Installments"
+                    android:background="#00c141"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:text="Not Available"
+                android:gravity="center"
+                android:background="@drawable/cell_shape" />
+
+            <LinearLayout
+                android:id="@+id/ll_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:background="@drawable/cell_shape"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_rent2"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:padding="5dp"
+                    android:textSize="10sp"
+                    android:text="rs1000"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_select_installment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:textSize="8sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Check Installments"
+                    android:background="#00c141"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:text="Not Available"
+                android:gravity="center"
+                android:background="@drawable/cell_shape" />
+            <LinearLayout
+                android:id="@+id/ll_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:background="@drawable/cell_shape"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_rent3"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:padding="5dp"
+                    android:textSize="10sp"
+                    android:text="rs1000"
+                    android:gravity="center" />
+
+                <TextView
+
+                    android:id="@+id/tv_select_installment3"
+                    android:tag="gb"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:textSize="8sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Check Installments"
+                    android:background="#00c141"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:text="Not Available"
+                android:gravity="center"
+                android:background="@drawable/cell_shape" />
+            <LinearLayout
+                android:id="@+id/ll_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:background="@drawable/cell_shape"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_rent4"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:padding="5dp"
+                    android:textSize="10sp"
+                    android:text="rs1000"
+                    android:gravity="center" />
+
+                <TextView
+
+                    android:id="@+id/tv_select_installment4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:textSize="8sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Check Installments"
+                    android:background="#00c141"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="20">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="5dp"
+                android:text="Ac + Common Let-Bath"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:background="@drawable/cell_shape" />
+
+
+            <TextView
+                android:id="@+id/tv_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:text="Not Available"
+                android:gravity="center"
+                android:background="@drawable/cell_shape" />
+            <LinearLayout
+                android:id="@+id/ll_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:background="@drawable/cell_shape"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_rent5"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:padding="5dp"
+                    android:textSize="10sp"
+                    android:text="rs1000"
+                    android:gravity="center" />
+
+                <TextView
+
+                    android:id="@+id/tv_select_installment5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:textSize="8sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Check Installments"
+                    android:background="#00c141"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:text="Not Available"
+                android:gravity="center"
+                android:background="@drawable/cell_shape" />
+            <LinearLayout
+                android:id="@+id/ll_6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:background="@drawable/cell_shape"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_rent6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:padding="5dp"
+                    android:textSize="10sp"
+                    android:text="rs1000"
+                    android:gravity="center" />
+
+                <TextView
+
+                    android:id="@+id/tv_select_installment6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:textSize="8sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Check Installments"
+                    android:background="#00c141"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:text="Not Available"
+                android:gravity="center"
+                android:background="@drawable/cell_shape" />
+            <LinearLayout
+                android:id="@+id/ll_7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:background="@drawable/cell_shape"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_rent7"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:padding="5dp"
+                    android:textSize="10sp"
+                    android:text="rs1000"
+                    android:gravity="center" />
+
+                <TextView
+
+                    android:id="@+id/tv_select_installment7"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:textSize="8sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Check Installments"
+                    android:background="#00c141"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:text="Not Available"
+                android:gravity="center"
+                android:background="@drawable/cell_shape" />
+            <LinearLayout
+                android:id="@+id/ll_8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:background="@drawable/cell_shape"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_rent8"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:padding="5dp"
+                    android:textSize="10sp"
+                    android:text="rs1000"
+                    android:gravity="center" />
+
+                <TextView
+
+                    android:id="@+id/tv_select_installment8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:textSize="8sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Check Installments"
+                    android:background="#00c141"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+        </TableRow>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="20">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/cell_shape"
+                android:padding="5dp"
+                android:text="Non-Ac + Attach Let-Bath"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:gravity="center"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:text="Not Available"
+                android:gravity="center"
+                android:background="@drawable/cell_shape" />
+            <LinearLayout
+                android:id="@+id/ll_9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:background="@drawable/cell_shape"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_rent9"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:padding="5dp"
+                    android:textSize="10sp"
+                    android:text="rs1000"
+                    android:gravity="center" />
+
+                <TextView
+
+                    android:id="@+id/tv_select_installment9"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:textSize="8sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Check Installments"
+                    android:background="#00c141"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_10"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:text="Not Available"
+                android:gravity="center"
+                android:background="@drawable/cell_shape" />
+            <LinearLayout
+                android:id="@+id/ll_10"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:background="@drawable/cell_shape"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_rent10"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:padding="5dp"
+                    android:textSize="10sp"
+                    android:text="rs1000"
+                    android:gravity="center" />
+
+                <TextView
+
+                    android:id="@+id/tv_select_installment10"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:textSize="8sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Check Installments"
+                    android:background="#00c141"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:text="Not Available"
+                android:gravity="center"
+                android:background="@drawable/cell_shape" />
+            <LinearLayout
+                android:id="@+id/ll_11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:background="@drawable/cell_shape"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_rent11"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:padding="5dp"
+                    android:textSize="10sp"
+                    android:text="rs1000"
+                    android:gravity="center" />
+
+                <TextView
+
+                    android:id="@+id/tv_select_installment11"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:textSize="8sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Check Installments"
+                    android:background="#00c141"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_12"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:text="Not Available"
+                android:gravity="center"
+                android:background="@drawable/cell_shape" />
+            <LinearLayout
+                android:id="@+id/ll_12"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:background="@drawable/cell_shape"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_rent12"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:padding="5dp"
+                    android:textSize="10sp"
+                    android:text="rs1000"
+                    android:gravity="center" />
+
+                <TextView
+
+                    android:id="@+id/tv_select_installment12"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:textSize="8sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Check Installments"
+                    android:background="#00c141"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="20">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="5dp"
+                android:text="Non-Ac + Common Let-Bath"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/cell_shape"
+                />
+
+            <TextView
+
+                android:id="@+id/tv_13"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:text="Not Available"
+                android:gravity="center"
+                android:background="@drawable/cell_shape" />
+            <LinearLayout
+                android:id="@+id/ll_13"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:background="@drawable/cell_shape"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_rent13"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:padding="5dp"
+                    android:textSize="10sp"
+                    android:text="rs1000"
+                    android:gravity="center" />
+
+                <TextView
+
+                    android:id="@+id/tv_select_installment13"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:textSize="8sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Check Installments"
+                    android:background="#00c141"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_14"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:text="Not Available"
+                android:gravity="center"
+                android:background="@drawable/cell_shape" />
+            <LinearLayout
+                android:id="@+id/ll_14"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:background="@drawable/cell_shape"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_rent14"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:padding="5dp"
+                    android:textSize="10sp"
+                    android:text="rs1000"
+                    android:gravity="center" />
+
+                <TextView
+
+                    android:id="@+id/tv_select_installment14"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:textSize="8sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Check Installments"
+                    android:background="#00c141"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:text="Not Available"
+                android:gravity="center"
+                android:background="@drawable/cell_shape" />
+            <LinearLayout
+                android:id="@+id/ll_15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:background="@drawable/cell_shape"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_rent15"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:padding="5dp"
+                    android:textSize="10sp"
+                    android:text="rs1000"
+                    android:gravity="center" />
+
+                <TextView
+
+                    android:id="@+id/tv_select_installment15"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:textSize="8sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Check Installments"
+                    android:background="#00c141"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_16"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:text="Not Available"
+                android:gravity="center"
+                android:background="@drawable/cell_shape" />
+
+            <LinearLayout
+                android:id="@+id/ll_16"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:background="@drawable/cell_shape"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_rent16"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:padding="5dp"
+                    android:textSize="10sp"
+                    android:text="rs1000"
+                    android:gravity="center" />
+
+                <TextView
+
+                    android:id="@+id/tv_select_installment16"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:textSize="8sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Check Installments"
+                    android:background="#00c141"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>

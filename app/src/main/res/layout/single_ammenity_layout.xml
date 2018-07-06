@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/ammenity_img"
+        style="@style/imgStyle"
+        android:src="@mipmap/ic_launcher" />
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0" />-->
+    <TextView
+        android:id="@+id/ammenity_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Geaser"
+        android:padding="5dp"
+        android:gravity="center"/>
+</LinearLayout>

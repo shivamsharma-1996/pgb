@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/ad_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SRI SAI BALAJI PG"
+        android:textColor="#000000"
+        android:padding = "5dp"
+        android:textSize="20dp"
+        />
+
+
+
+   <!-- <TextView
+        android:id="@+id/ad_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:text="10km"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        />-->
+
+
+    <TextView
+        android:id="@+id/ad_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/adcard_gender_bg"
+        android:text="Boy"
+        android:padding = "5dp"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        />
+</RelativeLayout>
+
+
+
+
+

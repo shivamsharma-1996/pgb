@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/room_instance_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dp"
+    android:background="@drawable/room_instance_bg">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Room Type*"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/ad_input_background"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Spinner
+            android:id="@+id/roomTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:prompt="@string/Spinner_title2"
+            android:spinnerMode="dialog" />
+    </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Facilities in Room*"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"/>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#e0e0e0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="1."
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:gravity="center"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#e0e0e0"/>
+    <RadioGroup
+        android:id="@+id/rg_acType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+       android:layout_weight="8"
+        android:orientation="horizontal"
+        android:background="@drawable/input_background">
+        <RadioButton
+            android:id="@+id/rb_ac"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="AC"/>
+        <RadioButton
+            android:id="@+id/rb_non_ac"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Non-Ac"/>
+    </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#e0e0e0"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="2."
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#e0e0e0"/>
+    <RadioGroup
+        android:id="@+id/rg_let_bath"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:background="@drawable/input_background">
+        <RadioButton
+            android:id="@+id/rb_attach"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:text="Attach Let-Bath"/>
+        <RadioButton
+            android:id="@+id/rb_common"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:text="Common Let-Bath"/>
+    </RadioGroup>
+        
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#e0e0e0"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="3."
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#e0e0e0"/>
+        <RadioGroup
+            android:id="@+id/rg_kitchen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:orientation="horizontal"
+            android:background="@drawable/input_background">
+            <RadioButton
+                android:id="@+id/rb_kitchen_yes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="Kitchen"/>
+            <RadioButton
+                android:id="@+id/rb_kitchen_non"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="Non-Kitchen"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#e0e0e0"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No. of Rooms of this type*"
+        android:gravity="center_vertical"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:visibility="gone"/>
+
+
+
+    <EditText
+        android:id="@+id/et_no_of_rooms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/ad_input_background"
+        android:hint="No. of Rooms"
+        android:inputType="number"
+        android:padding="7dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    android:weightSum="15"
+        android:elevation="5dp"
+        android:background="@drawable/rounded_bg"
+      >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:text="Rent of this Room- "
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:paddingLeft="10dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/et_rent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:hint="enter rent"
+        android:inputType="number"
+        android:maxLength="5"/>
+
+
+    <Spinner
+        android:id="@+id/spinner_rent_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:dropDownWidth="140dp"
+        android:gravity="left" />
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Have Installment System?"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:paddingLeft="10dp"
+            android:textSize="15sp" />
+
+
+
+<RadioGroup
+    android:id="@+id/rg_installment"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:weightSum="10"
+    android:layout_weight="5"
+    android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/installment_yes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="YES"/>
+        <RadioButton
+            android:id="@+id/installment_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="NO"/>
+</RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_installment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+<GridLayout
+    android:id="@+id/installment_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="3"
+    android:rowCount="3"
+    android:layout_gravity="left">
+
+
+    <EditText
+        android:id="@+id/et_installment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Installment-1"
+        android:inputType="number"
+        android:maxLength="6"/>
+
+
+</GridLayout>
+
+        </HorizontalScrollView>
+    <TextView
+        android:id="@+id/tv_add_more_installment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add more installment"
+        android:layout_gravity="right"
+        android:background="@drawable/facility_bg"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addThisRoom_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add This Room"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#88080808"
+        android:textColor="#ffffff"
+        android:padding="10dp" />
+
+</LinearLayout>
+

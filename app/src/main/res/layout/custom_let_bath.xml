@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<TextView
+    android:id="@+id/extra_charge_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="BATHROOM AND TOILET"
+    android:textStyle="bold"
+    android:textColor="@android:color/black"
+    android:textSize="17sp"
+    android:padding="5dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+
+        <RadioGroup
+            android:id="@+id/rg_let_bath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_attach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attach / Seperate"
+             />
+
+        <RadioButton
+            android:id="@+id/radio_shared"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shared / Common"
+            android:layout_marginTop="10dp"/>
+
+        <RadioButton
+            android:id="@+id/radio_both"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attach / Seperate  and  Shared / Common"
+            android:layout_marginTop="10dp"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+       />
+</LinearLayout>

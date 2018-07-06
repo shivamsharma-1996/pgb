@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Choose Room full_type*"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_RoomType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+
+        <!--   First Row   -->
+        <LinearLayout
+            android:id="@+id/firstRow"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="25">
+
+            <CheckBox
+                android:id="@+id/room_cb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/room_type_spinner1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:layout_marginLeft="2dp"
+                android:dropDownWidth="100dp" />
+
+            <EditText
+                android:id="@+id/et_room_rent1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:hint="Rent"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="6" />
+
+            <Spinner
+                android:id="@+id/room_month_spinner1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:dropDownWidth="145dp" />
+        </LinearLayout>
+
+        <!--   Second Row   -->
+        <LinearLayout
+            android:id="@+id/secondRow"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="25"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/room_cb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/room_type_spinner2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:layout_marginLeft="2dp"
+                android:dropDownWidth="100dp" />
+
+            <EditText
+                android:id="@+id/et_room_rent2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:hint="Rent"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="6" />
+
+            <Spinner
+                android:id="@+id/room_month_spinner2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:dropDownWidth="145dp" />
+        </LinearLayout>
+
+        <!--   Third Row   -->
+        <LinearLayout
+            android:id="@+id/thirdRow"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="25"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/room_cb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/room_type_spinner3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:layout_marginLeft="2dp"
+                android:dropDownWidth="100dp" />
+
+            <EditText
+                android:id="@+id/et_room_rent3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:hint="Rent"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="6" />
+
+            <Spinner
+                android:id="@+id/room_month_spinner3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:dropDownWidth="145dp" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/addRoom_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="Click to add more Rooms"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>
