@@ -7,4 +7,4 @@ An aggregation platform for Renter & Rentee.
 
  ## Dashboard
 
- <img src="https://user-images.githubusercontent.com/29976344/101461369-c59d5c00-3960-11eb-84b6-1229b166088e.png" width="200"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://user-images.githubusercontent.com/29976344/101461432-e1086700-3960-11eb-8bc5-77d9b32cfd78.png" width="200"/>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://user-images.githubusercontent.com/29976344/101461411-d948c280-3960-11eb-85b9-f0482c48b2ce.png" width="200"/> 
+ <img src="https://user-images.githubusercontent.com/29976344/101461369-c59d5c00-3960-11eb-84b6-1229b166088e.png" width="180"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://user-images.githubusercontent.com/29976344/101461432-e1086700-3960-11eb-8bc5-77d9b32cfd78.png" width="180"/>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://user-images.githubusercontent.com/29976344/101461411-d948c280-3960-11eb-85b9-f0482c48b2ce.png" width="180"/> 
